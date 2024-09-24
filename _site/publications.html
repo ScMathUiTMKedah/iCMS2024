@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.4.553">
+<meta name="generator" content="quarto-1.4.550">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -69,7 +69,6 @@ ul.task-list li input[type="checkbox"] {
 <link rel="icon" type="image/png" href="images/icms2025.png">
 
 
-
 <link rel="stylesheet" href="style.css">
 </head>
 
@@ -121,11 +120,11 @@ ul.task-list li input[type="checkbox"] {
     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-span-stylecolor-whitestrongprogrammespan">    
         <li>
     <a class="dropdown-item" href="./workshops.html">
- <span class="dropdown-text"><span style="color: black;">workshops</span></span></a>
+ <span class="dropdown-text"><span style="color: black;">Workshops</span></span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="./ProgramSchedule.html">
- <span class="dropdown-text"><span style="color: black;">Programme schedule</span></span></a>
+ <span class="dropdown-text"><span style="color: black;">Programme Schedule</span></span></a>
   </li>  
     </ul>
   </li>
@@ -188,7 +187,7 @@ ul.task-list li input[type="checkbox"] {
 <ul>
 <li>Romanian Statistical Review (WoS)<br>
 </li>
-<li>Austrian Journal of Statistics (WoS)<br>
+<li>Austrian Journal of Statistics (SCOPUS/WoS)<br>
 </li>
 <li>Educational Media International (EMI) (SCOPUS)<br>
 </li>
@@ -216,7 +215,7 @@ ul.task-list li input[type="checkbox"] {
 <ul>
 <li>IndoMath: Indonesia Mathematics Education(Sinta 3) - 75.00 (USD)<br>
 </li>
-<li>Jurnal dari PGRI Adi Buana Surabaya(Sinta 4) – Submission fee (no); Approved for Publication (approximately RM 140-RM 150)<br>
+<li>JStatistika PGRI Adi BUana (Sinta 4) – Submission fee (no); Approved for Publication (approximately RM 140-RM 150)<br>
 </li>
 </ul>
 <p>• All journals are recognized in SCOPUS/MYCITE. The final publication is subject to a rigorous quality assessment by the editorial team of the publisher.</p>
@@ -407,24 +406,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // clear code selection
     e.clearSelection();
   });
-    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
-    var mailtoRegex = new RegExp(/^mailto:/);
-      var filterRegex = new RegExp('/' + window.location.host + '/');
-    var isInternal = (href) => {
-        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
-    }
-    // Inspect non-navigation links and adorn them if external
- 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
-    for (var i=0; i<links.length; i++) {
-      const link = links[i];
-      if (!isInternal(link.href)) {
-        // undo the damage that might have been done by quarto-nav.js in the case of
-        // links that we want to consider external
-        if (link.dataset.originalHref !== undefined) {
-          link.href = link.dataset.originalHref;
-        }
-      }
-    }
   function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
     const config = {
       allowHTML: true,
@@ -459,11 +440,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
-      if (note) {
-        return note.innerHTML;
-      } else {
-        return "";
-      }
+      return note.innerHTML;
     });
   }
   const xrefs = window.document.querySelectorAll('a.quarto-xref');
